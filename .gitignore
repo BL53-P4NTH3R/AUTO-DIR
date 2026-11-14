@@ -1,0 +1,14 @@
+# SolidWorks / CAD temporary lock & backup files
+~$*.sld*
+*.SLDPRT.bak
+*.SLDASM.bak
+
+# Embedded & ROS 2 build artifacts
+firmware/**/.pio/
+software/ros2_ws/build/
+software/ros2_ws/install/
+software/ros2_ws/log/
+
+# Local secrets & environment files
+.env
+.vscode/mcp.json
