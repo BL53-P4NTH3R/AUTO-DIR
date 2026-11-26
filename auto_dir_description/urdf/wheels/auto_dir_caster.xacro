@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <link name="W420_ball_caster_supplied_STEP">
+    <inertial>
+      <origin xyz="-0.00014914 0.00017374 4.08880463" rpy="0 0 0" />
+      <mass value="${W420_ball_caster_supplied_STEP_mass}" />
+      <inertia ixx="451329462.358109355" ixy="-47.3457217138" ixz="-3891.6102763556"
+        iyy="177388350.6159245372" iyz="4097.0966726912" izz="523953131.154607594" />
+    </inertial>
+    <visual name="W420_ball_caster_supplied_STEP_visual">
+      <origin xyz="86 0 38.2299614" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/W420_ball_caster_supplied_STEP.stl" scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="W420_ball_caster_supplied_STEP_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="24.43623352 50.70000076 15.45999908" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="W420_ball_caster_supplied_STEP_joint" type="fixed">
+    <parent link="Octagonal_inspection_chassis" />
+    <child link="W420_ball_caster_supplied_STEP" />
+    <origin xyz="-86 0 -85.2299614" rpy="0 0 0" />
+  </joint>
+
+  <link name="W420_ball_caster_supplied_STEP_2">
+    <inertial>
+      <origin xyz="0 0 0.00000027" rpy="0 0 0" />
+      <mass value="${W420_ball_caster_supplied_STEP_2_mass}" />
+      <inertia ixx="48536149.0682027638" ixy="34731.0541706769" ixz="0" iyy="48491556.8371195719"
+        iyz="-0.0000000001" izz="48157810.220600605" />
+    </inertial>
+    <visual name="W420_ball_caster_supplied_STEP_2_visual">
+      <origin xyz="86 0 42.59996223" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/W420_ball_caster_supplied_STEP_2.stl" scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="W420_ball_caster_supplied_STEP_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="15.79347229 15.79346561 15.79999924" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="W420_ball_caster_supplied_STEP_2_joint" type="fixed">
+    <parent link="Octagonal_inspection_chassis" />
+    <child link="W420_ball_caster_supplied_STEP_2" />
+    <origin xyz="-86 0 -89.59996223" rpy="0 0 0" />
+  </joint>
+
+
+  <!-- Caster Mount -->
+  <link name="v3_style_caster_mount_fitted_to_W420">
+    <inertial>
+      <origin xyz="-4.46936527 -0.00047946 -2.49669009" rpy="0 0 0" />
+      <mass value="${v3_style_caster_mount_fitted_to_W420_mass}" />
+      <inertia ixx="16779575318.83842659" ixy="41119.8444392437" ixz="-222806665.0569467247"
+        iyy="8361848502.8976192474" iyz="276181.8969360901" izz="13194193064.3010997772" />
+    </inertial>
+    <visual name="v3_style_caster_mount_fitted_to_W420_visual">
+      <origin xyz="82.5 0 7.25" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/v3_style_caster_mount_fitted_to_W420.stl" scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="v3_style_caster_mount_fitted_to_W420_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="35 79.92708588 46.5" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="v3_style_caster_mount_fitted_to_W420_joint" type="fixed">
+    <parent link="Octagonal_inspection_chassis" />
+    <child link="v3_style_caster_mount_fitted_to_W420" />
+    <origin xyz="-82.5 0 -54.25" rpy="0 0 0" />
+  </joint>
+
+</robot>

@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <link name="_mm_wheel_left_layout">
+    <inertial>
+      <origin xyz="0.00159847 -0.13373383 -0.00004672" rpy="0 0 0" />
+      <mass value="${_mm_wheel_left_layout_mass}" />
+      <inertia ixx="19480808965.5183944702" ixy="-144665.7646665155" ixz="-29414.3313422865"
+        iyy="33874714899.6596412659" iyz="3750.1877010495" izz="19482351544.8866081238" />
+    </inertial>
+    <visual name="_mm_wheel_left_layout_visual">
+      <origin xyz="-50.79001427 -111 18.00000048" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/_mm_wheel_left_layout.stl" scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="_mm_wheel_left_layout_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="64.99992371 26.3999939 64.99986267" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="_mm_wheel_left_layout_joint" type="fixed">
+    <parent link="Octagonal_inspection_chassis" />
+    <child link="_mm_wheel_left_layout" />
+    <origin xyz="50.79001427 111 -65.00000048" rpy="0 0 0" />
+  </joint>
+
+  <link name="_mm_wheel_right_layout">
+    <inertial>
+      <origin xyz="-0.00158645 0.13373103 -0.00005211" rpy="0 0 0" />
+      <mass value="${_mm_wheel_right_layout_mass}" />
+      <inertia ixx="19480801694.7012405396" ixy="-148655.7639223421" ixz="22059.0386899883"
+        iyy="33874696947.1223640442" iyz="-3528.5423048459" izz="19482334362.3401184082" />
+    </inertial>
+    <visual name="_mm_wheel_right_layout_visual">
+      <origin xyz="-50.78998375 111 18.00000048" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/_mm_wheel_right_layout.stl" scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="_mm_wheel_right_layout_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="64.99992371 26.3999939 64.99986267" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="_mm_wheel_right_layout_joint" type="fixed">
+    <parent link="Octagonal_inspection_chassis" />
+    <child link="_mm_wheel_right_layout" />
+    <origin xyz="50.78998375 -111 -65.00000048" rpy="0 0 0" />
+  </joint>
+
+  <!-- Motor Mounts -->
+
+  <link name="BIN_02_MotorMount_FL">
+    <inertial>
+      <origin xyz="0.01745932 2.56807228 9.50233141" rpy="0 0 0" />
+      <mass value="${BIN_02_MotorMount_FL_mass}" />
+      <inertia ixx="10138960890.0474872589" ixy="23981782.9555799775" ixz="-40526980.8292094991"
+        iyy="15093030419.7687034607" iyz="451034992.2045432925" izz="13100063270.2314090729" />
+    </inertial>
+    <visual name="BIN_02_MotorMount_FL_visual">
+      <origin xyz="-50.78729248 -75 8" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/BIN_02_MotorMount_FL.stl" scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="BIN_02_MotorMount_FL_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="68.46034241 40 48" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="BIN_02_MotorMount_FL_joint" type="fixed">
+    <parent link="Octagonal_inspection_chassis" />
+    <child link="BIN_02_MotorMount_FL" />
+    <origin xyz="50.78729248 75 -55" rpy="0 0 0" />
+  </joint>
+
+  <link name="BIN_03_MotorMount_FR">
+    <inertial>
+      <origin xyz="0.01743522 -2.56807674 9.50232441" rpy="0 0 0" />
+      <mass value="${BIN_03_MotorMount_FR_mass}" />
+      <inertia ixx="10138956735.7752113342" ixy="-23978024.3483303934" ixz="-40521062.1099019498"
+        iyy="15093008333.2885837555" iyz="-451033894.3418180346" izz="13100040469.7086524963" />
+    </inertial>
+    <visual name="BIN_03_MotorMount_FR_visual">
+      <origin xyz="-50.78729248 75 8" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/BIN_03_MotorMount_FR.stl" scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="BIN_03_MotorMount_FR_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="68.46034241 40 48" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="BIN_03_MotorMount_FR_joint" type="fixed">
+    <parent link="Octagonal_inspection_chassis" />
+    <child link="BIN_03_MotorMount_FR" />
+    <origin xyz="50.78729248 -75 -55" rpy="0 0 0" />
+  </joint>
+
+</robot>

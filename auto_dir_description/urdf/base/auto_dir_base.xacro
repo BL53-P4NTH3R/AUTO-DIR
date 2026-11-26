@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <link name="base_footprint" />
+  <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint" />
+    <child link="Octagonal_inspection_chassis" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <link name="Octagonal_inspection_chassis">
+    <inertial>
+      <origin xyz="-0.00554286 0.02933278 -14.21982468" rpy="0 0 0" />
+      <mass value="${Octagonal_inspection_chassis_mass}" />
+      <inertia ixx="1527541817756.5920410156" ixy="-857153257.7619526386"
+        ixz="-226549569.1636525989" iyy="1657595413124.2353515625" iyz="120355585.1159259528"
+        izz="2954941743653.1005859375" />
+    </inertial>
+    <visual name="Octagonal_inspection_chassis_visual">
+      <origin xyz="0 0 -47" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/Octagonal_inspection_chassis.stl" scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="Octagonal_inspection_chassis_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="206 200 62" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="Octagonal_service_cover_with_projecting_roof_edge">
+    <inertial>
+      <origin xyz="-1.29910941 -0.46143565 8.52465101" rpy="0 0 0" />
+      <mass value="${Octagonal_service_cover_with_projecting_roof_edge_mass}" />
+      <inertia ixx="742695270037.7515869141" ixy="5208195678.570148468" ixz="-1951204289.4255459309"
+        iyy="793107221863.4862060547" iyz="-847886531.1748096943" izz="1502190663556.8205566406" />
+    </inertial>
+    <visual name="Octagonal_service_cover_with_projecting_roof_edge_visual">
+      <origin xyz="0 0 -97.5" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/Octagonal_service_cover_with_projecting_roof_edge.stl"
+          scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="Octagonal_service_cover_with_projecting_roof_edge_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="208 202 33" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Octagonal_service_cover_with_projecting_roof_edge_joint" type="fixed">
+    <parent link="Octagonal_inspection_chassis" />
+    <child link="Octagonal_service_cover_with_projecting_roof_edge" />
+    <origin xyz="0 0 50.5" rpy="0 0 0" />
+  </joint>
+
+  <link name="Octagonal_deck_with_overlapping_drip_skirt">
+    <inertial>
+      <origin xyz="-2.00911969 0 -0.98056889" rpy="0 0 0" />
+      <mass value="${Octagonal_deck_with_overlapping_drip_skirt_mass}" />
+      <inertia ixx="569011625824.5833740234" ixy="0.0000029196" ixz="1291723601.1896309853"
+        iyy="624711741428.2354736328" iyz="0.0000004923" izz="1192365438564.0375976563" />
+    </inertial>
+    <visual name="Octagonal_deck_with_overlapping_drip_skirt_visual">
+      <origin xyz="0 0 -80" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="${mesh_prefix}/Octagonal_deck_with_overlapping_drip_skirt.stl" scale="1 1 1" />
+      </geometry>
+      <material name="default" />
+    </visual>
+    <collision name="Octagonal_deck_with_overlapping_drip_skirt_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="214 208 18" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Octagonal_deck_with_overlapping_drip_skirt_joint" type="fixed">
+    <parent link="Octagonal_inspection_chassis" />
+    <child link="Octagonal_deck_with_overlapping_drip_skirt" />
+    <origin xyz="0 0 33" rpy="0 0 0" />
+  </joint>
+
+</robot>

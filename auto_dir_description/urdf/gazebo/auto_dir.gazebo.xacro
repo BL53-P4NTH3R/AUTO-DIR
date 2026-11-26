@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:if value="${sim == 'jazzy-harmonic'}">
+    <gazebo reference="Octagonal_inspection_chassis">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="Octagonal_service_cover_with_projecting_roof_edge">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="Octagonal_deck_with_overlapping_drip_skirt">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="_mm_wheel_left_layout">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="_mm_wheel_right_layout">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="v3_style_caster_mount_fitted_to_W420">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="BIN_02_MotorMount_FL">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="BIN_03_MotorMount_FR">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="Dreame_LDS_plate_supplied_STEP_hole_pattern">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="DreameLDS_2">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="DreameLDS">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="W420_ball_caster_supplied_STEP">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+    <gazebo reference="W420_ball_caster_supplied_STEP_2">
+      <mu1>0.8</mu1>
+      <mu2>0.8</mu2>
+      <kp>1000000</kp>
+      <kd>100</kd>
+      <minDepth>0.001</minDepth>
+      <maxVel>0.01</maxVel>
+      <selfCollide>false</selfCollide>
+      <visual>
+        <material>
+          <ambient>0.56 0.65 0.73 1</ambient>
+          <diffuse>0.56 0.65 0.73 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.15</metalness>
+              <roughness>0.55</roughness>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+    </gazebo>
+  </xacro:if>
+  
+</robot>
