@@ -22,6 +22,8 @@
     <xacro:property name="W420_ball_caster_supplied_STEP_mass" value="3588014.29357459" />
     <xacro:property name="W420_ball_caster_supplied_STEP_2_mass" value="1988140.60857785" />
 
+    <xacro:property name="scale" value="0.001 0.001 0.001" />
+
     <material name="default">
         <color rgba="0.56 0.65 0.73 1" />
     </material>

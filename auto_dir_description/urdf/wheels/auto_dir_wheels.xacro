@@ -11,7 +11,7 @@
     <visual name="_mm_wheel_left_layout_visual">
       <origin xyz="-50.79001427 -111 18.00000048" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${mesh_prefix}/_mm_wheel_left_layout.stl" scale="1 1 1" />
+        <mesh filename="${mesh_prefix}/_mm_wheel_left_layout.stl" scale="${scale}" />
       </geometry>
       <material name="default" />
     </visual>
@@ -38,7 +38,7 @@
     <visual name="_mm_wheel_right_layout_visual">
       <origin xyz="-50.78998375 111 18.00000048" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${mesh_prefix}/_mm_wheel_right_layout.stl" scale="1 1 1" />
+        <mesh filename="${mesh_prefix}/_mm_wheel_right_layout.stl" scale="${scale}" />
       </geometry>
       <material name="default" />
     </visual>
@@ -67,7 +67,7 @@
     <visual name="BIN_02_MotorMount_FL_visual">
       <origin xyz="-50.78729248 -75 8" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${mesh_prefix}/BIN_02_MotorMount_FL.stl" scale="1 1 1" />
+        <mesh filename="${mesh_prefix}/BIN_02_MotorMount_FL.stl" scale="${scale}" />
       </geometry>
       <material name="default" />
     </visual>
@@ -94,7 +94,7 @@
     <visual name="BIN_03_MotorMount_FR_visual">
       <origin xyz="-50.78729248 75 8" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${mesh_prefix}/BIN_03_MotorMount_FR.stl" scale="1 1 1" />
+        <mesh filename="${mesh_prefix}/BIN_03_MotorMount_FR.stl" scale="${scale}" />
       </geometry>
       <material name="default" />
     </visual>

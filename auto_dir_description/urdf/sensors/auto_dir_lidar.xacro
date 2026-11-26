@@ -12,7 +12,7 @@
       <origin xyz="0 0 -116.5" rpy="0 0 0" />
       <geometry>
         <mesh filename="${mesh_prefix}/Dreame_LDS_plate_supplied_STEP_hole_pattern.stl"
-          scale="1 1 1" />
+          scale="${scale}" />
       </geometry>
       <material name="default" />
     </visual>
@@ -39,7 +39,7 @@
     <visual name="DreameLDS_2_visual">
       <origin xyz="0 -0.00540829 -129.5" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${mesh_prefix}/DreameLDS_2.stl" scale="1 1 1" />
+        <mesh filename="${mesh_prefix}/DreameLDS_2.stl" scale="${scale}" />
       </geometry>
       <material name="default" />
     </visual>
@@ -66,7 +66,7 @@
     <visual name="DreameLDS_visual">
       <origin xyz="0 -0.00540733 -143.5" rpy="0 0 0" />
       <geometry>
-        <mesh filename="${mesh_prefix}/DreameLDS.stl" scale="1 1 1" />
+        <mesh filename="${mesh_prefix}/DreameLDS.stl" scale="${scale}" />
       </geometry>
       <material name="default" />
     </visual>
