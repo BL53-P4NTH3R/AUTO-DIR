@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="auto_dir">
+    <link name="Octagonal_inspection_chassis">
+      <pose>0 0 47 0 0 0</pose>
+      <inertial>
+        <pose>-0.00554286 0.02933278 -14.21982468 0 0 0</pose>
+        <mass>309366849.24947399</mass>
+        <inertia><ixx>1527541817756.5920410156</ixx><ixy>-857153257.7619526386</ixy><ixz>-226549569.1636525989</ixz><iyy>1657595413124.2353515625</iyy><iyz>120355585.1159259528</iyz><izz>2954941743653.1005859375</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>0 0 -47 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/Octagonal_inspection_chassis.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>206 200 62</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="Octagonal_service_cover_with_projecting_roof_edge">
+      <pose>0 0 97.5 0 0 0</pose>
+      <inertial>
+        <pose>-1.29910941 -0.46143565 8.52465101 0 0 0</pose>
+        <mass>169278889.64498931</mass>
+        <inertia><ixx>742695270037.7515869141</ixx><ixy>5208195678.570148468</ixy><ixz>-1951204289.4255459309</ixz><iyy>793107221863.4862060547</iyy><iyz>-847886531.1748096943</iyz><izz>1502190663556.8205566406</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>0 0 -97.5 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/Octagonal_service_cover_with_projecting_roof_edge.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>208 202 33</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="Octagonal_deck_with_overlapping_drip_skirt">
+      <pose>0 0 80 0 0 0</pose>
+      <inertial>
+        <pose>-2.00911969 0 -0.98056889 0 0 0</pose>
+        <mass>150265723.02505878</mass>
+        <inertia><ixx>569011625824.5833740234</ixx><ixy>0.0000029196</ixy><ixz>1291723601.1896309853</ixz><iyy>624711741428.2354736328</iyy><iyz>0.0000004923</iyz><izz>1192365438564.0375976563</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>0 0 -80 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/Octagonal_deck_with_overlapping_drip_skirt.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>214 208 18</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="_mm_wheel_left_layout">
+      <pose>50.79001427 111 -18.00000048 0 0 0</pose>
+      <inertial>
+        <pose>0.00159847 -0.13373383 -0.00004672 0 0 0</pose>
+        <mass>47554577.29835925</mass>
+        <inertia><ixx>19480808965.5183944702</ixx><ixy>-144665.7646665155</ixy><ixz>-29414.3313422865</ixz><iyy>33874714899.6596412659</iyy><iyz>3750.1877010495</iyz><izz>19482351544.8866081238</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>-50.79001427 -111 18.00000048 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/_mm_wheel_left_layout.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>64.99992371 26.3999939 64.99986267</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="_mm_wheel_right_layout">
+      <pose>50.78998375 -111 -18.00000048 0 0 0</pose>
+      <inertial>
+        <pose>-0.00158645 0.13373103 -0.00005211 0 0 0</pose>
+        <mass>47554559.74073744</mass>
+        <inertia><ixx>19480801694.7012405396</ixx><ixy>-148655.7639223421</ixy><ixz>22059.0386899883</ixz><iyy>33874696947.1223640442</iyy><iyz>-3528.5423048459</iyz><izz>19482334362.3401184082</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>-50.78998375 111 18.00000048 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/_mm_wheel_right_layout.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>64.99992371 26.3999939 64.99986267</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="v3_style_caster_mount_fitted_to_W420">
+      <pose>-82.5 0 -7.25 0 0 0</pose>
+      <inertial>
+        <pose>-4.46936527 -0.00047946 -2.49669009 0 0 0</pose>
+        <mass>26811546.32636261</mass>
+        <inertia><ixx>16779575318.83842659</ixx><ixy>41119.8444392437</ixy><ixz>-222806665.0569467247</ixz><iyy>8361848502.8976192474</iyy><iyz>276181.8969360901</iyz><izz>13194193064.3010997772</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>82.5 0 7.25 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/v3_style_caster_mount_fitted_to_W420.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>35 79.92708588 46.5</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="BIN_02_MotorMount_FL">
+      <pose>50.78729248 75 -8 0 0 0</pose>
+      <inertial>
+        <pose>0.01745932 2.56807228 9.50233141 0 0 0</pose>
+        <mass>25958585.76240427</mass>
+        <inertia><ixx>10138960890.0474872589</ixx><ixy>23981782.9555799775</ixy><ixz>-40526980.8292094991</ixz><iyy>15093030419.7687034607</iyy><iyz>451034992.2045432925</iyz><izz>13100063270.2314090729</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>-50.78729248 -75 8 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/BIN_02_MotorMount_FL.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>68.46034241 40 48</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="BIN_03_MotorMount_FR">
+      <pose>50.78729248 -75 -8 0 0 0</pose>
+      <inertial>
+        <pose>0.01743522 -2.56807674 9.50232441 0 0 0</pose>
+        <mass>25958566.54452845</mass>
+        <inertia><ixx>10138956735.7752113342</ixx><ixy>-23978024.3483303934</ixy><ixz>-40521062.1099019498</ixz><iyy>15093008333.2885837555</iyy><iyz>-451033894.3418180346</iyz><izz>13100040469.7086524963</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>-50.78729248 75 8 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/BIN_03_MotorMount_FR.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>68.46034241 40 48</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="Dreame_LDS_plate_supplied_STEP_hole_pattern">
+      <pose>0 0 116.5 0 0 0</pose>
+      <inertial>
+        <pose>-0.31333239 0.00530452 0.9565053 0 0 0</pose>
+        <mass>20206761.53403697</mass>
+        <inertia><ixx>11705117914.1720485687</ixx><ixy>-635431.8032607735</ixy><ixz>275383.7853661744</ixz><iyy>11475877872.3590869904</iyy><iyz>-4662.0735174462</iyz><izz>23146556921.7335929871</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>0 0 -116.5 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/Dreame_LDS_plate_supplied_STEP_hole_pattern.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>82 82 5</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="DreameLDS_2">
+      <pose>0 0.00540829 129.5 0 0 0</pose>
+      <inertial>
+        <pose>0.04003593 0.03613687 4.80679969 0 0 0</pose>
+        <mass>12974561.50585137</mass>
+        <inertia><ixx>3750281227.8656525612</ixx><ixy>27514275.6269324832</ixy><ixz>-12390174.6740924418</ixz><iyy>3607679181.2356915474</iyy><iyz>-615412.5194230946</iyz><izz>6479824591.0357818604</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>0 -0.00540829 -129.5 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/DreameLDS_2.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>64 63.98907471 21</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="DreameLDS">
+      <pose>0 0.00540733 143.5 0 0 0</pose>
+      <inertial>
+        <pose>0.00535594 0.08846231 3.74476042 0 0 0</pose>
+        <mass>11561723.5327449</mass>
+        <inertia><ixx>3992651519.761654377</ixx><ixy>-849271.4767369871</ixy><ixz>129387.9438642974</ixz><iyy>3931742524.3925905228</iyy><iyz>12469257.5262069814</iyz><izz>7064336355.787569046</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>0 -0.00540733 -143.5 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/DreameLDS.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>64 63.98907089 21</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="W420_ball_caster_supplied_STEP">
+      <pose>-86 0 -38.2299614 0 0 0</pose>
+      <inertial>
+        <pose>-0.00014914 0.00017374 4.08880463 0 0 0</pose>
+        <mass>3588014.29357459</mass>
+        <inertia><ixx>451329462.358109355</ixx><ixy>-47.3457217138</ixy><ixz>-3891.6102763556</ixz><iyy>177388350.6159245372</iyy><iyz>4097.0966726912</iyz><izz>523953131.154607594</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>86 0 38.2299614 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/W420_ball_caster_supplied_STEP.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>24.43623352 50.70000076 15.45999908</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <link name="W420_ball_caster_supplied_STEP_2">
+      <pose>-86 0 -42.59996223 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.00000027 0 0 0</pose>
+        <mass>1988140.60857785</mass>
+        <inertia><ixx>48536149.0682027638</ixx><ixy>34731.0541706769</ixy><ixz>0</ixz><iyy>48491556.8371195719</iyy><iyz>-0.0000000001</iyz><izz>48157810.220600605</izz></inertia>
+      </inertial>
+      <visual name="visual_0">
+        <pose>86 0 42.59996223 0 0 0</pose>
+        <geometry><mesh><uri>package://auto_dir_description/meshes/W420_ball_caster_supplied_STEP_2.stl</uri><scale>1 1 1</scale></mesh></geometry>
+        <material><ambient>0.56 0.65 0.73 1</ambient><diffuse>0.56 0.65 0.73 1</diffuse></material>
+      </visual>
+      <collision name="collision_0">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry><box><size>15.79347229 15.79346561 15.79999924</size></box></geometry>
+        <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+      </collision>
+    </link>
+    <joint name="Octagonal_service_cover_with_projecting_roof_edge_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>Octagonal_service_cover_with_projecting_roof_edge</child>
+    </joint>
+    <joint name="Octagonal_deck_with_overlapping_drip_skirt_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>Octagonal_deck_with_overlapping_drip_skirt</child>
+    </joint>
+    <joint name="_mm_wheel_left_layout_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>_mm_wheel_left_layout</child>
+    </joint>
+    <joint name="_mm_wheel_right_layout_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>_mm_wheel_right_layout</child>
+    </joint>
+    <joint name="v3_style_caster_mount_fitted_to_W420_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>v3_style_caster_mount_fitted_to_W420</child>
+    </joint>
+    <joint name="BIN_02_MotorMount_FL_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>BIN_02_MotorMount_FL</child>
+    </joint>
+    <joint name="BIN_03_MotorMount_FR_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>BIN_03_MotorMount_FR</child>
+    </joint>
+    <joint name="Dreame_LDS_plate_supplied_STEP_hole_pattern_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>Dreame_LDS_plate_supplied_STEP_hole_pattern</child>
+    </joint>
+    <joint name="DreameLDS_2_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>DreameLDS_2</child>
+    </joint>
+    <joint name="DreameLDS_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>DreameLDS</child>
+    </joint>
+    <joint name="W420_ball_caster_supplied_STEP_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>W420_ball_caster_supplied_STEP</child>
+    </joint>
+    <joint name="W420_ball_caster_supplied_STEP_2_joint" type="fixed">
+      <parent>Octagonal_inspection_chassis</parent>
+      <child>W420_ball_caster_supplied_STEP_2</child>
+    </joint>
+  </model>
+</sdf>
