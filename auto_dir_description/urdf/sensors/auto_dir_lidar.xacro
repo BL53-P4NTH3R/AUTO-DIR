@@ -3,13 +3,13 @@
 
   <link name="Dreame_LDS_plate_supplied_STEP_hole_pattern">
     <inertial>
-      <origin xyz="-0.31333239 0.00530452 0.9565053" rpy="0 0 0" />
+      <origin xyz="-0.00031333239 0.00000530452 0.0009565053" rpy="0 0 0" />
       <mass value="${Dreame_LDS_plate_supplied_STEP_hole_pattern_mass}" />
       <inertia ixx="11705117914.1720485687" ixy="-635431.8032607735" ixz="275383.7853661744"
         iyy="11475877872.3590869904" iyz="-4662.0735174462" izz="23146556921.7335929871" />
     </inertial>
     <visual name="Dreame_LDS_plate_supplied_STEP_hole_pattern_visual">
-      <origin xyz="0 0 -116.5" rpy="0 0 0" />
+      <origin xyz="0 0 -0.1165" rpy="0 0 0" />
       <geometry>
         <mesh filename="${mesh_prefix}/Dreame_LDS_plate_supplied_STEP_hole_pattern.stl"
           scale="${scale}" />
@@ -19,25 +19,25 @@
     <collision name="Dreame_LDS_plate_supplied_STEP_hole_pattern_collision">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <box size="82 82 5" />
+        <box size="0.082 0.082 0.005" />
       </geometry>
     </collision>
   </link>
   <joint name="Dreame_LDS_plate_supplied_STEP_hole_pattern_joint" type="fixed">
     <parent link="Octagonal_inspection_chassis" />
     <child link="Dreame_LDS_plate_supplied_STEP_hole_pattern" />
-    <origin xyz="0 0 69.5" rpy="0 0 0" />
+    <origin xyz="0 0 0.0695" rpy="0 0 0" />
   </joint>
 
   <link name="DreameLDS_2">
     <inertial>
-      <origin xyz="0.04003593 0.03613687 4.80679969" rpy="0 0 0" />
+      <origin xyz="0.00004003593 0.00003613687 0.00480679969" rpy="0 0 0" />
       <mass value="${DreameLDS_2_mass}" />
       <inertia ixx="3750281227.8656525612" ixy="27514275.6269324832" ixz="-12390174.6740924418"
         iyy="3607679181.2356915474" iyz="-615412.5194230946" izz="6479824591.0357818604" />
     </inertial>
     <visual name="DreameLDS_2_visual">
-      <origin xyz="0 -0.00540829 -129.5" rpy="0 0 0" />
+      <origin xyz="0 -0.00000540829 -0.1295" rpy="0 0 0" />
       <geometry>
         <mesh filename="${mesh_prefix}/DreameLDS_2.stl" scale="${scale}" />
       </geometry>
@@ -46,25 +46,25 @@
     <collision name="DreameLDS_2_collision">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <box size="64 63.98907471 21" />
+        <box size="0.064 0.06398907471 0.021" />
       </geometry>
     </collision>
   </link>
   <joint name="DreameLDS_2_joint" type="fixed">
     <parent link="Octagonal_inspection_chassis" />
     <child link="DreameLDS_2" />
-    <origin xyz="0 0.00540829 82.5" rpy="0 0 0" />
+    <origin xyz="0 0.00000540829 0.0825" rpy="0 0 0" />
   </joint>
 
   <link name="DreameLDS">
     <inertial>
-      <origin xyz="0.00535594 0.08846231 3.74476042" rpy="0 0 0" />
+      <origin xyz="0.00000535594 0.00008846231 0.00374476042" rpy="0 0 0" />
       <mass value="${DreameLDS_mass}" />
       <inertia ixx="3992651519.761654377" ixy="-849271.4767369871" ixz="129387.9438642974"
         iyy="3931742524.3925905228" iyz="12469257.5262069814" izz="7064336355.787569046" />
     </inertial>
     <visual name="DreameLDS_visual">
-      <origin xyz="0 -0.00540733 -143.5" rpy="0 0 0" />
+      <origin xyz="0 -0.00000540733 -0.1435" rpy="0 0 0" />
       <geometry>
         <mesh filename="${mesh_prefix}/DreameLDS.stl" scale="${scale}" />
       </geometry>
@@ -73,14 +73,14 @@
     <collision name="DreameLDS_collision">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <box size="64 63.98907089 21" />
+        <box size="0.064 0.06398907089 0.021" />
       </geometry>
     </collision>
   </link>
   <joint name="DreameLDS_joint" type="fixed">
     <parent link="Octagonal_inspection_chassis" />
     <child link="DreameLDS" />
-    <origin xyz="0 0.00540733 96.5" rpy="0 0 0" />
+    <origin xyz="0 0.00000540733 0.0965" rpy="0 0 0" />
   </joint>
 
 </robot>
