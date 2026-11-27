@@ -5,22 +5,22 @@
     <xacro:arg name="sim" default="jazzy-harmonic" />
     <xacro:property name="sim" value="$(arg sim)" />
     <xacro:property name="mesh_prefix" value="package://auto_dir_description/meshes" />
-    <xacro:property name="Octagonal_inspection_chassis_mass" value="309366849.24947399" />
+    <xacro:property name="Octagonal_inspection_chassis_mass" value="0.30936684924947399" />
     <xacro:property name="Octagonal_service_cover_with_projecting_roof_edge_mass"
-        value="169278889.64498931" />
+        value="0.16927888964498931" />
     <xacro:property name="Octagonal_deck_with_overlapping_drip_skirt_mass"
-        value="150265723.02505878" />
-    <xacro:property name="_mm_wheel_left_layout_mass" value="47554577.29835925" />
-    <xacro:property name="_mm_wheel_right_layout_mass" value="47554559.74073744" />
-    <xacro:property name="v3_style_caster_mount_fitted_to_W420_mass" value="26811546.32636261" />
-    <xacro:property name="BIN_02_MotorMount_FL_mass" value="25958585.76240427" />
-    <xacro:property name="BIN_03_MotorMount_FR_mass" value="25958566.54452845" />
+        value="0.15026572302505878" />
+    <xacro:property name="_mm_wheel_left_layout_mass" value="0.04755457729835925" />
+    <xacro:property name="_mm_wheel_right_layout_mass" value="0.04755455974073744" />
+    <xacro:property name="v3_style_caster_mount_fitted_to_W420_mass" value="0.02681154632636261" />
+    <xacro:property name="BIN_02_MotorMount_FL_mass" value="0.02595858576240427" />
+    <xacro:property name="BIN_03_MotorMount_FR_mass" value="0.02595856654452845" />
     <xacro:property name="Dreame_LDS_plate_supplied_STEP_hole_pattern_mass"
-        value="20206761.53403697" />
-    <xacro:property name="DreameLDS_2_mass" value="12974561.50585137" />
-    <xacro:property name="DreameLDS_mass" value="11561723.5327449" />
-    <xacro:property name="W420_ball_caster_supplied_STEP_mass" value="3588014.29357459" />
-    <xacro:property name="W420_ball_caster_supplied_STEP_2_mass" value="1988140.60857785" />
+        value="0.02020676153403697" />
+    <xacro:property name="DreameLDS_2_mass" value="0.01297456150585137" />
+    <xacro:property name="DreameLDS_mass" value="0.0115617235327449" />
+    <xacro:property name="W420_ball_caster_supplied_STEP_mass" value="0.00358801429357459" />
+    <xacro:property name="W420_ball_caster_supplied_STEP_2_mass" value="0.00198814060857785" />
 
     <xacro:property name="scale" value="0.001 0.001 0.001" />
 
