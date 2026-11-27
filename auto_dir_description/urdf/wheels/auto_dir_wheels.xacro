@@ -22,10 +22,11 @@
       </geometry>
     </collision>
   </link>
-  <joint name="_mm_wheel_left_layout_joint" type="fixed">
+  <joint name="_mm_wheel_left_layout_joint" type="continuous">
     <parent link="Octagonal_inspection_chassis" />
     <child link="_mm_wheel_left_layout" />
     <origin xyz="50.79001427 111 -65.00000048" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
   </joint>
 
   <link name="_mm_wheel_right_layout">
@@ -49,10 +50,11 @@
       </geometry>
     </collision>
   </link>
-  <joint name="_mm_wheel_right_layout_joint" type="fixed">
+  <joint name="_mm_wheel_right_layout_joint" type="continuous">
     <parent link="Octagonal_inspection_chassis" />
     <child link="_mm_wheel_right_layout" />
     <origin xyz="50.78998375 -111 -65.00000048" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
   </joint>
 
   <!-- Motor Mounts -->

@@ -33,6 +33,6 @@
     <xacro:include filename="$(find auto_dir_description)/urdf/wheels/auto_dir_wheels.xacro" />
     <xacro:include filename="$(find auto_dir_description)/urdf/wheels/auto_dir_caster.xacro" />
     <xacro:include filename="$(find auto_dir_description)/urdf/sensors/auto_dir_lidar.xacro" />
-    <xacro:include filename="$(find auto_dir_description)/urdf/gazebo/auto_dir.gazebo.xacro" />
+    <!-- <xacro:include filename="$(find auto_dir_description)/urdf/gazebo/auto_dir.gazebo.xacro" /> -->
 
 </robot>
